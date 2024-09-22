@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0    " />
+    <title>NinJha</title>
+    <link rel="icon" type="image/svg" href="../image/ninjha-logo.svg" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="particles">
+        <div class="overlay"></div>
+    </div>
+    <div class="cursor"></div>
+    <header class="header">
+        <div class="logo">
+            <img class="logo-shuriken" src="../image/ninjha-logo.svg" />
+            <a class="logo-name" href="index.html">NinJha</a>
+        </div>
+        <div class="right-section">
+            <input type="checkbox" id="menu-check" />
+            <label for="menu-check" class="icons">
+                <img src="../image/menu-open.svg" id="menu-icon" />
+                <img src="../image/menu-close.svg" id="close-icon" />
+            </label>
+            <div class="menu">
+                <a href="index.html" style="--i: 0">Home</a>
+                <a href="about.html" style="--i: 1" class="clicked">About</a>
+                <a href="projects.html" style="--i: 2">Projects</a>
+                <a href="contact.html" style="--i: 3">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about-page">
+            <div class="container">
+                <div class="column-1">
+                    <div class="row-1">
+                        <div class="title">
+                            <h1>ABOUT ME</h1>
+                            <p>My Profile At A Glance</p>
+                        </div>
+                        <div id="sub-menu">
+                            <div class="item">
+                                <a class="line" href="#introduction"></a>
+                                <a id="introductionMenu" href="#introduction">Introduction</a>
+                            </div>
+                            <div class="item">
+                                <a class="line" href="#education"></a>
+                                <a id="skillsMenu" href="#skills">Skills</a>
+                            </div>
+                            <div class="item">
+                                <a class="line" href="#skills"></a>
+                                <a id="educationMenu" href="#education">Education</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="about-social-icons" class="social-icons">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../image/google-icon.svg" alt="Google" />
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../image/github-icon.svg" alt="GitHub" />
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../image/linkedin-icon.svg" alt="LinkedIn" />
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../image/facebook-icon.svg" alt="Facebook" />
+                        </a>
+                        <a href="instragram.com" target="_blank">
+                            <img src="../image/instagram-icon.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div id="introduction" class="segment">
+                        <li class="title">Introduction</li>
+                        <div class="content">
+                            <div class="row-1">
+                                <img src="../image/profile-picture.png" class="left-part" />
+                                <div class="right-part">
+                                    <div class="main-information">
+                                        <p id="dynamic-name-2" class="name">
+                                            JHANUZ NIÑO MATIDIOS.
+                                        </p>
+                                        <p id="dynamic-profession-2" class="profession">
+                                            Full-stack Developer. UI/UX Designer.
+                                        </p>
+                                    </div>
+                                    <p id="dynamic-description-2" class="description">
+                                        An aspiring full-stack developer passionate about crafting
+                                        innovative PROJECTS prioritizing security and efficiency.
+                                        Proficient in web/software developing and UI/UX design,
+                                        creating seamless digital experiences. CONTACT me to
+                                        explore collaboration opportunities or learn more ABOUT
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row-2">
+                                <div class="personal-details">
+                                    <p class="name">Personal Details</p>
+                                    <div id="details-container" class="detail-container">
+                                        <div class="column">
+                                            <p class="left-part">Age</p>
+                                            <p class="right-part">20 years old</p>
+                                        </div>
+                                        <div class="column">
+                                            <p class="left-part">Birthdate</p>
+                                            <p class="right-part">01-12-04</p>
+                                        </div>
+                                        <div class="column">
+                                            <p class="left-part">Phone</p>
+                                            <p class="right-part">09123456789</p>
+                                        </div>
+                                        <div class="column">
+                                            <p class="left-part">Email</p>
+                                            <p class="right-part">jhanuz321@gmail.com</p>
+                                        </div>
+                                        <div class="column">
+                                            <p class="left-part">Address</p>
+                                            <p class="right-part">Ulas, Davao City</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="interest">
+                                    <p class="name">Interests</p>
+                                    <div class="interest-container">
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/game-icon.svg" alt="Games" />
+                                            <p>Games</p>
+                                        </div>
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/music-icon.svg" alt="Music" />
+                                            <p>Music</p>
+                                        </div>
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/manga-icon.svg" alt="Manga" />
+                                            <p>Manga</p>
+                                        </div>
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/anime-icon.svg" alt="Anime" />
+                                            <p>Anime</p>
+                                        </div>
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/movies-icon.svg" alt="Movies" />
+                                            <p>Movies</p>
+                                        </div>
+                                        <div class="interests-card">
+                                            <img class="interest-image" src="../image/coding-icon.svg" alt="Coding" />
+                                            <p>Coding</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills" class="segment">
+                        <li class="title">Skills</li>
+                        <div class="content">
+                            <div class="card">
+                                <div class="row-1">
+                                    <p class="title">Software & Website Development</p>
+                                    <p class="description">
+                                        I specialize in developing dynamic websites and software
+                                        applications, ensuring robust functionality and seamless
+                                        performance across all platforms.
+                                    </p>
+                                    <p class="label">Tools I use</p>
+                                </div>
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <img src="../image/java-icon.png" alt="JAVA" />
+                                        <p class="skill-name">JAVA</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/html-icon.png" alt="HTML" />
+                                        <p class="skill-name">HTML</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/css-icon.png" alt="CSS" />
+                                        <p class="skill-name">CSS</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/javascript-icon.png" alt="JS" />
+                                        <p class="skill-name">JS</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/php-icon.png" alt="PHP" />
+                                        <p class="skill-name">PHP</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/r-icon.png" alt="RS" />
+                                        <p class="skill-name">RS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row-1">
+                                    <p class="title">UI/UX & Graphic Design</p>
+                                    <p class="description">
+                                        I create visually compelling and user-friendly designs,
+                                        enhancing the overall user experience with attention to
+                                        detail and creativity.
+                                    </p>
+                                    <p class="label">Tools I use</p>
+                                </div>
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <img src="../image/photoshop-icon.png" alt="PS" />
+                                        <p class="skill-name">PS</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/adobexd-icon.png" alt="ADOBEXD" />
+                                        <p class="skill-name">ADOBEXD</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/figma-icon.png" alt="FIGMA" />
+                                        <p class="skill-name">FIGMA</p>
+                                    </div>
+                                    <div class="skill">
+                                        <img src="../image/canva-icon.png" alt="CANVA" />
+                                        <p class="skill-name">CANVA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="education" class="segment">
+                        <li class="title">Education</li>
+                        <div id="education-container" class="content">
+                            <div class="card">
+                                <img class="school-logo" src="../image/spbts-logo.png"
+                                    alt="Southern Philippines Baptist Theological Seminary LOGO" />
+                                <div class="school-info">
+                                    <div class="top-part">
+                                        <p class="school-name">
+                                            Southern Philippines Baptist Theological Seminary
+                                        </p>
+                                        <p class="school-level">High School Level</p>
+                                        <p class="school-address">
+                                            Km. 9 Libby Road, Puan, Talomo 8000 Davao City Davao Del
+                                            Sur
+                                        </p>
+                                    </div>
+                                    <p class="school-description">
+                                        SPBTS is dedicated to teaching God’s Word, equipping God’s
+                                        servants, and developing godly nation builders. A private
+                                        educational institution located in Puan, Davao City. It
+                                        was established through the inspiration of Elaine
+                                        Crotwell, a missionary who began holding Bible studies at
+                                        her home in 19531.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="school-logo" src="../image/uic-logo.png"
+                                    alt="University of the Immaculate Conception LOGO" />
+                                <div class="school-info">
+                                    <div class="top-part">
+                                        <p class="school-name">
+                                            University of the Immaculate Conception
+                                        </p>
+                                        <p class="school-level">Senior High School Level</p>
+                                        <p class="school-address">
+                                            Bajada, Davao City 8000 Davao City Davao Del Sur
+                                        </p>
+                                    </div>
+                                    <p class="school-description">
+                                        UIC has accepted the challenge to lead in humanities,
+                                        science, and technology in a globalized society. Its
+                                        mission is to provide Christian and quality education, be
+                                        relevant to the demands of the time, and achieve its
+                                        vision of a transformed society where individuals live
+                                        their dignity as children of God.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="school-logo" src="../image/usep-logo.png"
+                                    alt="University of Southeastern Philippines LOGO" />
+                                <div class="school-info">
+                                    <div class="top-part">
+                                        <p class="school-name">
+                                            University of Southeastern Philippines
+                                        </p>
+                                        <p class="school-level">College Level</p>
+                                        <p class="school-address">
+                                            Iñigo Street, Obrero, 8000 Davao City Davao Del Sur
+                                        </p>
+                                    </div>
+                                    <p class="school-description">
+                                        USeP aims to foster positive change by providing quality
+                                        education, conducting relevant research, serving the
+                                        community, and managing resources sustainably. Its mission
+                                        aligns with the socio-economic development needs of
+                                        Mindanao and beyond.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">
+                <p class="label">Page</p>
+                <p class="page">02</p>
+            </div>
+        </section>
+    </main>
+    <script></script>
+</body>
+
+</html>
